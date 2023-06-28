@@ -1,0 +1,128 @@
+/* Styles for header */
+
+:root {
+  --my-coral-color: coral;
+  --my-size: 100px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a[href='#'] {
+  background-color: blue;
+}
+
+.cls-section {
+  border: 1px solid red;
+}
+
+.cls-section h2 {
+  color: aqua;
+}
+
+p.long-text {
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 50px;
+
+  /*border: 10px solid black;*/
+  border-radius: 15px;
+  border-top: 10px;
+  border-left: 10px;
+  border-right: 10px;
+  border-bottom: 10px;
+  border-style: dashed;
+  border-color: black;
+}
+
+.cls-section .long-text {
+  color: blueviolet;
+}
+
+.cls-section > .long-text { 
+  color: var(--my-coral-color);
+}
+
+.activation:active {
+  color: aqua;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+h2:active {
+  color: black;
+}
+
+h2:hover {
+  background-color: blueviolet;
+  cursor: pointer;
+}
+
+
+/* Styles for navigation */
+nav {
+  background-color: #555;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Styles for main content */
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+section h2 {
+  color: #333;
+}
+
+/* Styles for footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+#box { 
+  position: fixed;
+  top: 0;
+  width: 250px;
+  height: 250px;
+  border: 1px solid black;
+}
+
+#inside {
+  position: absolute;
+  top: 10px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  width: 25px;
+  height: 25px;
+  border: 1px solid black;
+}
