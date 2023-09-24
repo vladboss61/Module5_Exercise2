@@ -107,22 +107,23 @@ footer {
   text-align: center;
 }
 
-#box { 
-  position: fixed;
-  top: 0;
-  width: 250px;
-  height: 250px;
+#box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: red;
+  width: 15px;
+  height: 15px;
   border: 1px solid black;
+  animation: rotateBox 4s linear infinite;
 }
 
-#inside {
-  position: absolute;
-  top: 10px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-
-  width: 25px;
-  height: 25px;
-  border: 1px solid black;
+@keyframes rotateBox { 
+  100% {
+      /*Chrome and Safari browses*/
+      -webkit-transform: rotate(360deg); 
+      /*Mozila browse*/
+      -moz-transform: rotate(360deg);
+      transform:rotate(360deg); 
+  } 
 }
